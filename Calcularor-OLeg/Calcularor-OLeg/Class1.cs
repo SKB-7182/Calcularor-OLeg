@@ -70,7 +70,7 @@ namespace Calcularor_OLeg
     {
         public double calculate(double firstValue, double secendValue)
         {
-            return Math.Pow(2,firstValue);
+            return Math.Pow(2, secendValue);
         }
 
     }

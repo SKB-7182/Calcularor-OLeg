@@ -16,12 +16,11 @@ namespace Calcularor_OLeg
         {
             InitializeComponent();
         }
-        private const bool power = true;
+
         private double a, b;
         private int count;
         bool znak = true;
         private double result;
-
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -175,7 +174,7 @@ namespace Calcularor_OLeg
         {
             if (textBox1.Text != "")
             {
-                a = double.Parse(textBox1.Text);
+                a = float.Parse(textBox1.Text);
                 textBox1.Clear();
                 count = 5;
                 label1.Text = a.ToString();
@@ -191,7 +190,10 @@ namespace Calcularor_OLeg
                 calculator2 calculator = Class1.cal1(count);
                 result = calculator.calculate(a, double.Parse(textBox1.Text));
             }
+            else
+            {
           
+            }
             textBox1.Clear();
             label1.Text = result.ToString();
             znak = false;
